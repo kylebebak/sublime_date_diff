@@ -1,3 +1,9 @@
 {
-  "fmt": "%a %Y-%m-%d"
+  "fmts": [
+    {"label": "Wkdy YYYY-MM-DD", "fmt": "%a %Y-%m-%d"},
+    {"label": "Wkdy MM/DD/YY", "fmt": "%a %D"},
+    {"label": "Weekday mth dd, YYYY", "fmt": "%A %b %-d, %Y"},
+    {"label": "Month dd, YYYY", "fmt": "%B %-d, %Y"},
+    {"label": "mth dd, YYYY", "fmt": "%b %-d, %Y"}
+  ]
 }
