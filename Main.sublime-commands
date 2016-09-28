@@ -1,0 +1,4 @@
+[
+  { "caption": "DateDiff: Today", "command": "date_diff", "args": {"days": 0} },
+  { "caption": "DateDiff: Date Diff", "command": "prompt_date_diff_days" }
+]
