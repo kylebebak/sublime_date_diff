@@ -17,6 +17,8 @@ class PromptDateDiffFmt(sublime_plugin.WindowCommand):
         self.window.show_quick_panel([f.get('label') for f in self.fmts], self.on_done)
 
     def on_done(self, index):
+        if index < 0:  # e.g. user presses escape
+            return
         fmt = self.fmts[index].get('fmt')
         self.window.run_command('prompt_date_diff_days', {'fmt': fmt})
 
